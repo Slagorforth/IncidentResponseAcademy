@@ -2,8 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walk,
+    attack,
+    interact
+}
+
 public class PlayerMovement : MonoBehaviour {
 
+    public PlayerState currentState;
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
@@ -11,9 +19,12 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
-	}
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -40,6 +51,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void MoveCharacter()
     {
+        change.Normalize();
         myRigidbody.MovePosition(
             transform.position + change * speed * Time.deltaTime
         );
