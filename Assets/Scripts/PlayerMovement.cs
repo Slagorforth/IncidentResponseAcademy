@@ -5,7 +5,6 @@ using UnityEngine;
 public enum PlayerState
 {
     walk,
-    attack,
     interact
 }
 
@@ -16,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
+    public VectorValue startingPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
         myRigidbody = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+        transform.position = startingPosition.initialValue;
     }
 	
 	// Update is called once per frame
