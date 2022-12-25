@@ -1541,6 +1541,23 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: a0f7fad3a8d642b4da640e4024431d12,
         type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 1511351449023530, guid: 23b4ac048e483b84f991cb961456b8a6,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 1546803495693904, guid: f5f2c32eca6fec44a9437f292253c686,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 841bda74786f35e489c00b07704316b0, type: 2}
   m_IsPrefabParent: 0
