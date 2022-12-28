@@ -4042,8 +4042,8 @@ GameObject:
   - component: {fileID: 925140161}
   - component: {fileID: 925140160}
   - component: {fileID: 925140159}
-  - component: {fileID: 925140158}
   - component: {fileID: 925140157}
+  - component: {fileID: 925140158}
   m_Layer: 0
   m_Name: Collision
   m_TagString: Untagged
@@ -4083,23 +4083,47 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 925140158}
     m_ColliderPaths:
-    - - X: 5000000
-        Y: 5000000
-      - X: -5000000
-        Y: 5000000
-      - X: -5000000
-        Y: -5000000
-      - X: 5000000
-        Y: -5000000
+    - - X: -120000000
+        Y: 10000000
+      - X: -120000000
+        Y: 70000000
+      - X: 120000000
+        Y: 70000000
+      - X: 120000000
+        Y: -70000000
+      - X: -120000000
+        Y: -70000000
+      - X: -120000000
+        Y: -10000000
+      - X: -130000000
+        Y: -10000000
+      - X: -130000000
+        Y: -80000000
+      - X: 130000000
+        Y: -80000000
+      - X: 130000000
+        Y: 80000000
+      - X: -130000000
+        Y: 80000000
+      - X: -130000000
+        Y: 10000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.5, y: 0.5}
-      - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
+    - - {x: 13, y: 8}
+      - {x: -13, y: 8}
+      - {x: -13, y: 1}
+      - {x: -12, y: 1}
+      - {x: -12, y: 7}
+      - {x: 12, y: 7}
+      - {x: 12, y: -7}
+      - {x: -12, y: -7}
+      - {x: -12, y: -1}
+      - {x: -13, y: -1}
+      - {x: -13, y: -8}
+      - {x: 13, y: -8}
   m_VertexDistance: 0.0005
---- !u!61 &925140158
-BoxCollider2D:
+--- !u!19719996 &925140158
+TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -4111,18 +4135,6 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!50 &925140159
 Rigidbody2D:
   serializedVersion: 4
