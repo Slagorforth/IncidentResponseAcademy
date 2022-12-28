@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Animations/Scenes/HouseInterior.unity
+    guid: b122fd99c2725984ababcdc25e3e4a2e
+  - enabled: 1
+    path: Assets/Animations/Scenes/SampleScene.unity
     guid: 88f77bba8ec69944ebf673a87de7f9ff
   - enabled: 1
-    path: Assets/Scenes/Office.unity
+    path: Assets/Animations/Scenes/Office.unity
     guid: 5ca7f53f63f37a34ca097e7769e73c88
   - enabled: 1
-    path: Assets/Scenes/HouseInterior.unity
-    guid: b122fd99c2725984ababcdc25e3e4a2e
+    path: Assets/Animations/Scenes/Task1.unity
+    guid: 67c44bab65145fc4885ab89e82fa00cd
+  - enabled: 1
+    path: Assets/Animations/Scenes/Task2.unity
+    guid: e0c4b1ca5b8616143bad5f54c3a2880c
+  - enabled: 1
+    path: Assets/Animations/Scenes/Warroom.unity
+    guid: 6664113d158663341ad4b87c275c480d
   m_configObjects: {}
