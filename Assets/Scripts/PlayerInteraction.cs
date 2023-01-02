@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Diese Klasse ermöglicht es dem Spieler, PC-Objekte innerhalb einer bestimmten Distanz zu interagieren, indem er die Taste "E" drückt.
 public class PlayerInteraction : MonoBehaviour
 {
+    // Die Distanz, innerhalb der der Spieler PC-Objekte interagieren kann.
     public float interactionRange = 2.0f;
 
     private void Update()
@@ -24,3 +26,4 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 }
+

@@ -45,3 +45,9 @@ TagManager:
   - name: Player
     uniqueID: 2386951117
     locked: 0
+  - name: Signs
+    uniqueID: 1253773165
+    locked: 0
+  - name: Clue
+    uniqueID: 1148621763
+    locked: 0
