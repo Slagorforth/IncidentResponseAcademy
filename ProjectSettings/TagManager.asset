@@ -44,3 +44,15 @@ TagManager:
   - name: Player
     uniqueID: 2386951117
     locked: 0
+<<<<<<< Updated upstream
+=======
+  - name: Signs
+    uniqueID: 1253773165
+    locked: 0
+  - name: Clue
+    uniqueID: 1148621763
+    locked: 0
+  - name: Notification
+    uniqueID: 2988332879
+    locked: 0
+>>>>>>> Stashed changes
