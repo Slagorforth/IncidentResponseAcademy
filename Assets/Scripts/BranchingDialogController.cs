@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
 
 public class BranchingDialogController : MonoBehaviour {
 
@@ -14,7 +14,9 @@ public class BranchingDialogController : MonoBehaviour {
     [SerializeField] private Story myStory;
     [SerializeField] private GameObject dialogHolder;
     [SerializeField] private GameObject choiceHolder;
-    
+    [SerializeField] public ScrollRect comScroll;
+    //[SerializeField] private Scroll 
+
 
     // Use this for initialization
     void Start () {
@@ -50,6 +52,7 @@ public class BranchingDialogController : MonoBehaviour {
         while (myStory.canContinue)
         {
             MakeNewDialog(myStory.Continue());
+            StartCoroutine(ForceScrollDown());
         }
         if(myStory.currentChoices.Count > 0)
         {
@@ -94,5 +97,16 @@ public class BranchingDialogController : MonoBehaviour {
     {
         myStory.ChooseChoiceIndex(choice);
         RefreshView();
+    }
+
+    
+    IEnumerator ForceScrollDown()
+    {
+        // Wait for end of frame AND force update all canvases before setting to bottom.
+
+        yield return new WaitForEndOfFrame();
+        Canvas.ForceUpdateCanvases();
+        comScroll.verticalNormalizedPosition = 0f;
+        Canvas.ForceUpdateCanvases();
     }
 }
