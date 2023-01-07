@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
-//using UnityEngine.UIElements;
+
 
 public class BranchingDialogController : MonoBehaviour {
 
@@ -14,8 +14,7 @@ public class BranchingDialogController : MonoBehaviour {
     [SerializeField] private Story myStory;
     [SerializeField] private GameObject dialogHolder;
     [SerializeField] private GameObject choiceHolder;
-    [SerializeField] public ScrollRect comScroll;
-    //[SerializeField] private Scroll 
+    [SerializeField] public ScrollRect comScroll; 
 
 
     // Use this for initialization
