@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.50896835
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.131801
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9022,6 +9022,44 @@ Prefab:
       propertyPath: m_Size.y
       value: 0.45915604
       objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: sceneToLoad
+      value: Task2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: playerPosition.x
+      value: -9.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: playerPosition.y
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 1546803495693904, guid: f5f2c32eca6fec44a9437f292253c686,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 1511351449023530, guid: 23b4ac048e483b84f991cb961456b8a6,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cc2479c64f03774c85055f9641f6c38,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 841bda74786f35e489c00b07704316b0, type: 2}
   m_IsPrefabParent: 0
