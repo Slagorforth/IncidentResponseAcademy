@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    public bool active;
-    public BoolValue storedValue;
-    public Sprite activeSprite;
-    private SpriteRenderer mySprite;
-    public Door thisDoor;
+    public bool active; //Deklariert eine Variable active, die den Zustand des Schalters speichert.
+    public BoolValue storedValue; //Deklariert eine Referenz auf ein BoolValue-Objekt, das den gespeicherten Wert des Schalters enthält.
+    public Sprite activeSprite; //Deklariert eine Referenz auf ein aktives Sprite, das verwendet wird, wenn der Schalter aktiviert ist.
+    private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
+    public Door thisDoor; //Deklariert eine Referenz auf die Tür, die geöffnet werden soll, wenn der Schalter aktiviert wird.
 
     // Start is called before the first frame update
     void Start()
     {
-        mySprite = GetComponent<SpriteRenderer>();
-        active = storedValue.RuntimeValue;
-        if (active)
+        mySprite = GetComponent<SpriteRenderer>(); //Holt den spriteRenderer-Komponenten des Schalters
+        active = storedValue.RuntimeValue; //Setzt den aktiven Zustand des Schalters auf den gespeicherten Wert des BoolValue-Objekts.
+        if (active)  //Überprüft, ob der Schalter aktiviert ist.
         {
             ActivateSwitch();
         }
@@ -23,10 +23,10 @@ public class Switch : MonoBehaviour
 
     public void ActivateSwitch()
     {
-        active = true;
-        storedValue.RuntimeValue = active;
+        active = true; //Setzt den aktiven Zustand des Schalters auf "wahr"
+        storedValue.RuntimeValue = active; //Setzt den gespeicherten Wert des BoolValue-Objekts auf den aktiven Zustand des Schalters.
         thisDoor.Open();
-        mySprite.sprite = activeSprite;
+        mySprite.sprite = activeSprite; //Ändert das sprite des Schalters auf das aktive sprite.
     }
 
     public void OnTriggerEnter2D(Collider2D other)

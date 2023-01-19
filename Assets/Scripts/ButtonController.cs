@@ -7,26 +7,19 @@ public class ButtonController : MonoBehaviour {
     public Signal contextOn;
     // Das Signal, das gesendet wird, wenn der Spieler die Nähe verlässt.
     public Signal contextOff;
-    public GameObject light1;
-    public GameObject light2;
-    public GameObject light3;
-    public GameObject light4;
-    public GameObject schalter1;
-    public GameObject schalter2;
-    public GameObject schalter3;
-    public GameObject schalter4;
-    public GameObject schalterAus1;
-    public GameObject schalterAus2;
-    public GameObject schalterAus3;
-    public GameObject schalterAus4;
+    public GameObject light1, light2, light3, light4;
+    public GameObject schalter1, schalter2, schalter3, schalter4;
+    public GameObject schalterAus1, schalterAus2, schalterAus3, schalterAus4;
+    public GameObject lockedDoor;
+    public Sprite newSprite;
     // Eine Flag, die angibt, ob der Spieler in der Nähe ist.
     public bool playerInRange;
-    int zaehler = 0;
-
+    int zaehler = 0; 
+    
     // Use this for initialization
     void Start () {
-		
-	}
+        
+    }
 
     // Update is called once per frame
     void Update()
@@ -35,7 +28,7 @@ public class ButtonController : MonoBehaviour {
         {
             if (schalter1.GetComponent<ButtonSwitch>().InRange() && schalter1.activeSelf)
             {
-                Debug.Log("1");
+                //Debug.Log("1");
                 schalter1.GetComponent<ButtonSwitch>().playerInRange = false;
                 schalter1.SetActive(false);
                 schalterAus1.SetActive(true);
@@ -43,7 +36,7 @@ public class ButtonController : MonoBehaviour {
             }            
             else if (schalter2.GetComponent<ButtonSwitch>().InRange() && schalter2.activeSelf)
             {
-                Debug.Log("2");
+                //Debug.Log("2");
                 schalter2.GetComponent<ButtonSwitch>().playerInRange = false;
                 schalter2.SetActive(false);
                 schalterAus2.SetActive(true);
@@ -51,7 +44,7 @@ public class ButtonController : MonoBehaviour {
             }
             else if (schalter3.GetComponent<ButtonSwitch>().InRange() && schalter3.activeSelf)
             {
-                Debug.Log("3");
+                //Debug.Log("3");
                 schalter3.GetComponent<ButtonSwitch>().playerInRange = false;
                 schalter3.SetActive(false);
                 schalterAus3.SetActive(true);
@@ -59,7 +52,7 @@ public class ButtonController : MonoBehaviour {
             }            
             else if (schalter4.GetComponent<ButtonSwitch>().InRange() && schalter4.activeSelf)
             {
-                Debug.Log("4");
+                //Debug.Log("4");
                 schalter4.GetComponent<ButtonSwitch>().playerInRange = false;
                 schalter4.SetActive(false);
                 schalterAus4.SetActive(true);
@@ -74,7 +67,7 @@ public class ButtonController : MonoBehaviour {
             }
             else
             {
-                Debug.Log("SwitchElse");
+                //Debug.Log("SwitchElse");
                 ResetSwitches();
             }
         }
@@ -100,7 +93,7 @@ public class ButtonController : MonoBehaviour {
     public void LightSwitching()
     {
         zaehler++;
-        Debug.Log("zähler:" + zaehler);
+        //Debug.Log("zähler:" + zaehler);
         if (schalterAus3.activeSelf && zaehler == 1)
         {
             light3.SetActive(true);
@@ -116,6 +109,8 @@ public class ButtonController : MonoBehaviour {
         else if (schalterAus2.activeSelf && zaehler == 4)
         {
             light2.SetActive(true);
+            lockedDoor.GetComponent<SpriteRenderer>().sprite = newSprite;
+            lockedDoor.GetComponent<BoxCollider2D>().enabled = false;
         }
         else
         {
