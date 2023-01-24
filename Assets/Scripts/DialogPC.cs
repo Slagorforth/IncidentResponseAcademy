@@ -32,7 +32,7 @@ public class DialogPC : Interactable {
         }
 	}
     // Diese Methode wird aufgerufen, wenn ein anderes Collision2D-GameObject in den Trigger eintritt.
-    private void OnTriggerEnter2D(Collider2D other)
+    override public void OnTriggerEnter2D(Collider2D other)
     {
         // Wenn das GameObject, das den Trigger betritt, das Player-Tag hat, wird das "contextOn"-Signal gesendet und die "playerInRange"-Flag wird auf "true" gesetzt.
         if (other.CompareTag("Player"))
@@ -43,7 +43,7 @@ public class DialogPC : Interactable {
     }
 
     // Diese Methode wird aufgerufen, wenn ein anderes Collision2D-GameObject den Trigger verlässt.
-    private void OnTriggerExit2D(Collider2D other)
+    override public void OnTriggerExit2D(Collider2D other)
     {
         // Wenn das GameObject, das den Trigger verlässt, das Player-Tag hat, wird das "contextOff"-Signal gesendet und die "playerInRange"-Flag wird auf "false" gesetzt.
         // Die Dialogbox wird ebenfalls deaktiviert.

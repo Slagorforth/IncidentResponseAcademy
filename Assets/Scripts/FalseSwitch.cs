@@ -8,6 +8,7 @@ public class FalseSwitch : MonoBehaviour
     public BoolValue storedValue;
     public Sprite activeSprite;
     private SpriteRenderer mySprite;
+    public Door thisDoor; //Deklariert eine Referenz auf die Tür, die geöffnet werden soll, wenn der Schalter aktiviert wird.
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class FalseSwitch : MonoBehaviour
     {
         active = true;
         storedValue.RuntimeValue = active;
+        thisDoor.Open();
         mySprite.sprite = activeSprite;
     }
 
