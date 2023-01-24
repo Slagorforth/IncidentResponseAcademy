@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Switch : MonoBehaviour
-{
+public class LastRightSwitch : MonoBehaviour {
+
     public bool active; //Deklariert eine Variable active, die den Zustand des Schalters speichert.
     public BoolValue storedValue; //Deklariert eine Referenz auf ein BoolValue-Objekt, das den gespeicherten Wert des Schalters enthält.
     public Sprite activeSprite; //Deklariert eine Referenz auf ein aktives Sprite, das verwendet wird, wenn der Schalter aktiviert ist.
     private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
-    public Door thisDoor; //Deklariert eine Referenz auf die Tür, die geöffnet werden soll, wenn der Schalter aktiviert wird.
     public GameObject score;
 
     // Start is called before the first frame update
@@ -26,7 +25,6 @@ public class Switch : MonoBehaviour
     {
         active = true; //Setzt den aktiven Zustand des Schalters auf "wahr"
         storedValue.RuntimeValue = active; //Setzt den gespeicherten Wert des BoolValue-Objekts auf den aktiven Zustand des Schalters.
-        thisDoor.Open();
         mySprite.sprite = activeSprite; //Ändert das sprite des Schalters auf das aktive sprite.
         score.GetComponent<ScoreManager>().AddScore();
     }

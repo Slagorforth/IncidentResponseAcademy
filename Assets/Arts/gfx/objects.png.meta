@@ -255,7 +255,7 @@ TextureImporter:
     21300500: objects_250
     21300502: objects_251
     21300504: objects_252
-    21300506: objects_253
+    21300506: punkte
     21300508: objects_254
     21300510: objects_255
     21300512: objects_256
@@ -5495,13 +5495,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_253
+      name: punkte
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
-        width: 16
-        height: 16
+        y: 40
+        width: 79
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
