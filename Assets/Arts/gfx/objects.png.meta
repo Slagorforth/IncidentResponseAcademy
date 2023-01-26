@@ -27,8 +27,8 @@ TextureImporter:
     21300044: objects_22
     21300046: objects_23
     21300048: objects_24
-    21300050: objects_25
-    21300052: objects_26
+    21300050: teleporter1
+    21300052: teleporter2
     21300054: objects_27
     21300056: objects_28
     21300058: objects_29
@@ -50,8 +50,8 @@ TextureImporter:
     21300090: objects_45
     21300092: objects_46
     21300094: objects_47
-    21300096: objects_48
-    21300098: objects_49
+    21300096: teleporter3
+    21300098: teleporter4
     21300100: objects_50
     21300102: objects_51
     21300104: objects_52
@@ -73,7 +73,7 @@ TextureImporter:
     21300136: objects_68
     21300138: objects_69
     21300140: objects_70
-    21300142: objects_71
+    21300142: Teleport
     21300144: objects_72
     21300146: objects_73
     21300148: objects_74
@@ -935,10 +935,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_25
+      name: teleporter1
       rect:
         serializedVersion: 2
-        x: 416
+        x: 419
         y: 304
         width: 16
         height: 16
@@ -955,7 +955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_26
+      name: teleporter2
       rect:
         serializedVersion: 2
         x: 432
@@ -1395,11 +1395,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_48
+      name: teleporter3
       rect:
         serializedVersion: 2
-        x: 416
-        y: 288
+        x: 419
+        y: 292
         width: 16
         height: 16
       alignment: 0
@@ -1415,11 +1415,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_49
+      name: teleporter4
       rect:
         serializedVersion: 2
         x: 432
-        y: 288
+        y: 292
         width: 16
         height: 16
       alignment: 0
@@ -1855,7 +1855,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_71
+      name: Teleport
       rect:
         serializedVersion: 2
         x: 352
@@ -1898,10 +1898,10 @@ TextureImporter:
       name: objects_73
       rect:
         serializedVersion: 2
-        x: 384
+        x: 387
         y: 272
-        width: 16
-        height: 16
+        width: 13
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

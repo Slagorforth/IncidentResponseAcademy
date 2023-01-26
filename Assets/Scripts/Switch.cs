@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Switch : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Switch : MonoBehaviour
     private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
     public Door thisDoor; //Deklariert eine Referenz auf die Tür, die geöffnet werden soll, wenn der Schalter aktiviert wird.
     public GameObject score;
+    public GameObject controller;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,7 @@ public class Switch : MonoBehaviour
             ActivateSwitch();
         }
     }
-
+        
     public void ActivateSwitch()
     {
         active = true; //Setzt den aktiven Zustand des Schalters auf "wahr"
@@ -37,6 +39,14 @@ public class Switch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ActivateSwitch();
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            controller.GetComponent<SwitchController>().TurnOff();
         }
     }
 }

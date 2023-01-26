@@ -9,6 +9,7 @@ public class LastRightSwitch : MonoBehaviour {
     public Sprite activeSprite; //Deklariert eine Referenz auf ein aktives Sprite, das verwendet wird, wenn der Schalter aktiviert ist.
     private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
     public GameObject score;
+    public GameObject controller;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,14 @@ public class LastRightSwitch : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             ActivateSwitch();
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            controller.GetComponent<SwitchController>().TurnOff();
         }
     }
 }

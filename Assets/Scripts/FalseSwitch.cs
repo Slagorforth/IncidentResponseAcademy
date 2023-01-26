@@ -9,6 +9,7 @@ public class FalseSwitch : MonoBehaviour
     public Sprite activeSprite;
     private SpriteRenderer mySprite;
     public Door thisDoor; //Deklariert eine Referenz auf die Tür, die geöffnet werden soll, wenn der Schalter aktiviert wird.
+    public GameObject controller;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,14 @@ public class FalseSwitch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ActivateSwitch();
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            controller.GetComponent<SwitchController>().TurnOff();
         }
     }
 }

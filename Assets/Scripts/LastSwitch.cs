@@ -8,7 +8,8 @@ public class LastSwitch : MonoBehaviour
     public BoolValue storedValue; //Deklariert eine Referenz auf ein BoolValue-Objekt, das den gespeicherten Wert des Schalters enthält.
     public Sprite activeSprite; //Deklariert eine Referenz auf ein aktives Sprite, das verwendet wird, wenn der Schalter aktiviert ist.
     private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
-    
+    public GameObject controller;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,14 @@ public class LastSwitch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ActivateSwitch();
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            controller.GetComponent<SwitchController>().TurnOff();
         }
     }
 }

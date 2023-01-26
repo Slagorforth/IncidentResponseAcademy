@@ -1357,6 +1357,7 @@ RectTransform:
   - {fileID: 94371259}
   - {fileID: 1884590901}
   - {fileID: 1466364305}
+  - {fileID: 1964747348}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4308,9 +4309,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
   contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
-  dialogBox: {fileID: 94371258}
+  dialogBox: {fileID: 1964747349}
   dialogText: {fileID: 318193185}
-  dialog: "Erkl\xE4rung"
+  dialog: "Mehrere PCs haben Logfiles die auff\xE4llig sind und ggf. kritisch sein
+    k\xF6nnten. Finde heraus um welche es sich handelt und erhalte so den ben\xF6tigten
+    3-stelligen Code."
   playerInRange: 0
 --- !u!61 &598077603
 BoxCollider2D:
@@ -5037,9 +5040,31 @@ Prefab:
       propertyPath: dialog
       value: "M\xF6chten Sie den Hauptserver herunterfahren?"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114120853990063688, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &867634168 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1810627485637226, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 867634167}
+--- !u!114 &867634169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867634168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
+  contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
+  dialogBox: {fileID: 94371258}
+  dialogText: {fileID: 318193185}
+  dialog: Das sind Server
 --- !u!1001 &876706940
 Prefab:
   m_ObjectHideFlags: 0
@@ -5442,6 +5467,31 @@ Prefab:
     - target: {fileID: 1633347467444336, guid: 8c2be557a970ab44885700eefc04349e, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114262395734817586, guid: 8c2be557a970ab44885700eefc04349e,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 577.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 116.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c2be557a970ab44885700eefc04349e, type: 2}
@@ -6396,11 +6446,33 @@ Prefab:
     - target: {fileID: 114120853990063688, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9,
         type: 2}
       propertyPath: dialog
-      value: "M\xF6chten Sie die Firewall ausschalten?"
+      value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114120853990063688, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1648665025 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1810627485637226, guid: 9c70dc5abec3bd74bb1cc081cbfd15c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1648665024}
+--- !u!114 &1648665026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648665025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
+  contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
+  dialogBox: {fileID: 94371258}
+  dialogText: {fileID: 318193185}
+  dialog: Das ist eine Firewall
 --- !u!1 &1691694027
 GameObject:
   m_ObjectHideFlags: 0
@@ -10962,6 +11034,142 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1884590900}
+--- !u!1001 &1964747347
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 284113511}
+    m_Modifications:
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 98.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 665.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 168.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635939035375178, guid: 57753a15175859c44a0817ebbd559065, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_Text
+      value: "Bei mehreren PCs sind Logfiles entstanden die auff\xE4llig sind und
+        ggf. kritisch sein k\xF6nnten. Finde heraus um welche PCs es sich handelt
+        und erhalte so den ben\xF6tigten 3-stelligen Code."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 57753a15175859c44a0817ebbd559065, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1964747348 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
+    type: 2}
+  m_PrefabInternal: {fileID: 1964747347}
+--- !u!1 &1964747349 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1635939035375178, guid: 57753a15175859c44a0817ebbd559065,
+    type: 2}
+  m_PrefabInternal: {fileID: 1964747347}
 --- !u!1 &1978485752
 GameObject:
   m_ObjectHideFlags: 0
@@ -11229,11 +11437,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.95
+      value: -1.52
       objectReference: {fileID: 0}
     - target: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.54
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
       propertyPath: m_LocalPosition.z
