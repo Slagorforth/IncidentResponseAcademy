@@ -991,7 +991,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 327115744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e2f1ceaa9e5774d98a92cac795f8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
@@ -999,7 +999,6 @@ MonoBehaviour:
   dialogBox: {fileID: 578065601}
   dialogText: {fileID: 1334475056}
   dialog: Detect
-  playerInRange: 0
 --- !u!61 &327115747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1596,9 +1595,31 @@ Prefab:
       propertyPath: dialog
       value: Recover
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114715418199016500, guid: f93a5382e797d504b89692ccc63b8de9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f93a5382e797d504b89692ccc63b8de9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &495026228 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1197077131898160, guid: f93a5382e797d504b89692ccc63b8de9,
+    type: 2}
+  m_PrefabInternal: {fileID: 495026227}
+--- !u!114 &495026229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495026228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
+  contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
+  dialogBox: {fileID: 578065601}
+  dialogText: {fileID: 1334475056}
+  dialog: Recover
 --- !u!1 &500043679 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1031060597807924, guid: d86b538816cb99a49bb5724b397c5c5a,
@@ -1789,9 +1810,31 @@ Prefab:
       propertyPath: dialog
       value: Identify
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114715418199016500, guid: f93a5382e797d504b89692ccc63b8de9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f93a5382e797d504b89692ccc63b8de9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &543007487 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1197077131898160, guid: f93a5382e797d504b89692ccc63b8de9,
+    type: 2}
+  m_PrefabInternal: {fileID: 543007486}
+--- !u!114 &543007488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543007487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
+  contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
+  dialogBox: {fileID: 578065601}
+  dialogText: {fileID: 1334475056}
+  dialog: Identify
 --- !u!1 &578065601 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1633347467444336, guid: 8c2be557a970ab44885700eefc04349e,
@@ -6995,7 +7038,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1015638308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e2f1ceaa9e5774d98a92cac795f8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
@@ -7005,8 +7048,7 @@ MonoBehaviour:
   dialog: "Im oberen Teil des Raumes befinden sich mehrere Schalter, die jeweils f\xFCr
     eine Phase im Incident Response Prozess stehen. Bringen Sie die Schalter in die
     richtige Reihenfolge um in den n\xE4chsten Raum zu gelangen. Ist ein Schalter
-    richtig,  leuchtet eine Lampe dar\xFCber auf."
-  playerInRange: 0
+    richtig, leuchtet eine Lampe dar\xFCber auf."
 --- !u!61 &1015638311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8222,7 +8264,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1649013917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e2f1ceaa9e5774d98a92cac795f8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
@@ -8230,7 +8272,6 @@ MonoBehaviour:
   dialogBox: {fileID: 578065601}
   dialogText: {fileID: 1334475056}
   dialog: Protect
-  playerInRange: 0
 --- !u!61 &1649013920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8500,7 +8541,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1823498107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e2f1ceaa9e5774d98a92cac795f8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
@@ -8508,7 +8549,6 @@ MonoBehaviour:
   dialogBox: {fileID: 578065601}
   dialogText: {fileID: 1334475056}
   dialog: Respond
-  playerInRange: 0
 --- !u!61 &1823498110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8922,12 +8962,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114500964759875544, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
-        type: 2}
-      propertyPath: startingPosition
-      value: 
-      objectReference: {fileID: 11400000, guid: 7cc2479c64f03774c85055f9641f6c38,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
   m_IsPrefabParent: 0
@@ -8936,79 +8970,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
     type: 2}
   m_PrefabInternal: {fileID: 2058690651}
---- !u!1 &2058690653 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1986588617906042, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
-    type: 2}
-  m_PrefabInternal: {fileID: 2058690651}
---- !u!114 &2058690654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2058690653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4338c1cfa63898641a3eb9d00018489f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contextClue: {fileID: 2111025987}
---- !u!114 &2058690655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2058690653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d502f5b80535ad4a9925cd2153944d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
-  signalEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2058690654}
-        m_MethodName: Enable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &2058690656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2058690653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d502f5b80535ad4a9925cd2153944d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
-  signalEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2058690654}
-        m_MethodName: Disable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!4 &2094108663 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4341170381110010, guid: f93a5382e797d504b89692ccc63b8de9,
@@ -9233,57 +9194,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   myNotification: {fileID: 11400000, guid: 4d7eaf88e7a147d4d879bb0ba9d0ceff, type: 2}
---- !u!1001 &2111025986
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2058690652}
-    m_Modifications:
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4793740164217714, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729494157030976, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7d5afa0ebf9569e40847b9b81b1d58bd, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &2111025987 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1729494157030976, guid: 7d5afa0ebf9569e40847b9b81b1d58bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 2111025986}
 --- !u!1001 &2113591550
 Prefab:
   m_ObjectHideFlags: 0

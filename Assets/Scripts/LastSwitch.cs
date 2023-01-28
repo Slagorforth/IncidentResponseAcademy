@@ -9,6 +9,7 @@ public class LastSwitch : MonoBehaviour
     public Sprite activeSprite; //Deklariert eine Referenz auf ein aktives Sprite, das verwendet wird, wenn der Schalter aktiviert ist.
     private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
     public GameObject controller;
+    public GameObject scoreManager;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class LastSwitch : MonoBehaviour
         active = true; //Setzt den aktiven Zustand des Schalters auf "wahr"
         storedValue.RuntimeValue = active; //Setzt den gespeicherten Wert des BoolValue-Objekts auf den aktiven Zustand des Schalters.
         mySprite.sprite = activeSprite; //Ändert das sprite des Schalters auf das aktive sprite.
+        scoreManager.GetComponent<ScoreManager>().False();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
