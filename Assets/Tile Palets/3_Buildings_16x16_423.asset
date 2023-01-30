@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 3_Buildings_16x16_423
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300846, guid: 72615563af1c09644a3dbf394b49ab96, type: 3}
+  m_Sprite: {fileID: 21300846, guid: 844077a56d4b9ab41912f92085bf8992, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

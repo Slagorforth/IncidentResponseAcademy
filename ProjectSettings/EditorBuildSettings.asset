@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Animations/Scenes/Zwischenraum.unity
     guid: 1ba6b96b88251f3468b22bdd1086dc23
   - enabled: 1
-    path: Assets/Animations/Scenes/Task4.unity
+    path: Assets/Animations/Scenes/Endraum.unity
     guid: 5cd3bd21268330e4daf3ce384475d592
+  - enabled: 1
+    path: Assets/Animations/Scenes/Lernraum.unity
+    guid: 666a6ce2ebe7e794cad61c81916268e4
   m_configObjects: {}
