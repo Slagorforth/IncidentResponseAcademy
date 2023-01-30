@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonSwitch : MonoBehaviour {
+public class HidingTip : MonoBehaviour {
 
     // Das Signal, das gesendet wird, wenn der Spieler in die Nähe kommt.
     public Signal contextOn;
@@ -10,22 +10,29 @@ public class ButtonSwitch : MonoBehaviour {
     public Signal contextOff;
     // Eine Flag, die angibt, ob der Spieler in der Nähe ist.
     public bool playerInRange;
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update() {
-        
-    }
+    public GameObject schalterAus;
+    public GameObject schalterAn;
+    public GameObject buch;
 
-    public bool InRange()
+    // Update is called once per frame
+    void Update()
     {
-        return playerInRange;
+        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        {
+            if (schalterAn.activeSelf)
+            {
+                schalterAn.SetActive(false);
+                schalterAus.SetActive(true);
+                buch.SetActive(true);
+            }
+            else
+            {
+                schalterAus.SetActive(false);
+                buch.SetActive(false);
+                schalterAn.SetActive(true);
+            }
+        }
     }
-
-   
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -48,4 +55,3 @@ public class ButtonSwitch : MonoBehaviour {
 
     }
 }
-

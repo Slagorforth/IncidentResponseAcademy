@@ -11,6 +11,8 @@ public class FalseSwitch : MonoBehaviour
     public Door thisDoor; //Deklariert eine Referenz auf die Tür, die geöffnet werden soll, wenn der Schalter aktiviert wird.
     public GameObject controller;
     public GameObject scoreManager;
+    public GameObject signal;
+    public float displayTime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,14 @@ public class FalseSwitch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             controller.GetComponent<SwitchController>().TurnOff();
+            signal.SetActive(true);
+            StartCoroutine(DeactivateAfterTime());
         }
+    }
+
+    IEnumerator DeactivateAfterTime()
+    {
+        yield return new WaitForSeconds(displayTime);
+        signal.SetActive(false);        
     }
 }

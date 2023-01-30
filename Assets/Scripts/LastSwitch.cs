@@ -10,6 +10,8 @@ public class LastSwitch : MonoBehaviour
     private SpriteRenderer mySprite; //Deklariert eine private Referenz auf den SpriteRenderer des Schalters.
     public GameObject controller;
     public GameObject scoreManager;
+    public GameObject signal;
+    public float displayTime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,14 @@ public class LastSwitch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             controller.GetComponent<SwitchController>().TurnOff();
+            signal.SetActive(true);
+            StartCoroutine(DeactivateAfterTime());
         }
+    }
+
+    IEnumerator DeactivateAfterTime()
+    {
+        yield return new WaitForSeconds(displayTime);
+        signal.SetActive(false);
     }
 }
