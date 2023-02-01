@@ -13,6 +13,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkLibrary:
   - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: d908a4612d8bf7b4e923ee1846abd965, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 5d43bced99b91da4bb5cb45e3bc74f51, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 5e62357d58c37d74c8dc09c1efbbbe10, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: c2cc33a1415ec174aae11c562bb35f17, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 4156bdb7758f0484f9c20d473dd0c90c, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 673d6a522424bfc429e083ed40c1201e, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 9f8a418ad580f4c42bb67250dc783d77, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: e72470e5ab9a75c4eb1723554a0d3d23, type: 3}
+  - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 1e2a0de2ed78e04468c70ac78344418d, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: be0cb09d9f66afa47b1ef73a25c68183, type: 3}
@@ -45,36 +61,20 @@ MonoBehaviour:
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: d783535aa4cece54aa564f0a68329bb3, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 1460e815e969b43b8a83a7caa8b48c27, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 1c116dcf4d465104b821eb113b63ba01, type: 3}
+    inkAsset: {fileID: 102900000, guid: c39b915b61729c74e90761f1fadd893e, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: 2bb0f3c44d69b4044a643e844dd5c055, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 5137e139ff01b9c439b3f7c6728d5978, type: 3}
+    inkAsset: {fileID: 102900000, guid: cbedcca06619e0c44893afba6b681486, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: d5db3d69b4e22cf4a814938019b15c31, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: ce3850510fa08b84c8ab541cb579905c, type: 3}
+    inkAsset: {fileID: 102900000, guid: fae9b538e4671414c9ac210ab4fdf582, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: f7aac5cb0a355f64380aa7c7ed704d96, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: d7fd02e17d62f444a827f58e6cff58b8, type: 3}
+    inkAsset: {fileID: 102900000, guid: 1460e815e969b43b8a83a7caa8b48c27, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: c2cc33a1415ec174aae11c562bb35f17, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: ed4704f22e37f124e9fc67c89c0b3561, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 5d43bced99b91da4bb5cb45e3bc74f51, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 39d3343ba236b0d489795ea9392c8b9d, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: e72470e5ab9a75c4eb1723554a0d3d23, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 3af0a27ecc8e40841a39fb6366451960, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 673d6a522424bfc429e083ed40c1201e, type: 3}
+    jsonAsset: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
   pendingCompilationStack: []
   compilationStack: []
