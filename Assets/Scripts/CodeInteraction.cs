@@ -12,7 +12,7 @@ public class CodeInteraction : MonoBehaviour {
     public InputField codeInput;
     public GameObject lockedDoor;
     public Sprite newSprite;
-    private string correctCode = "245";
+    private string correctCode = "254";
     public bool playerInRange;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class CodeInteraction : MonoBehaviour {
     {
         
     }
-
+    
     void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.Space))

@@ -16,12 +16,11 @@ Beim Incident Response gibt es laut Nist(National Institute of Standards and Tec
         ++[Zurück]
             Zurück -> Divert1
  * [Identify] Identify
-    Entwickeln Sie ein organisatorisches Verständnis, um Cybersecurity-Risiken für Systeme, Personen, Vermögenswerte, Daten und Fähigkeiten zu verwalten. Das Verständnis des Geschäftszusammenhangs, der Ressourcen und der damit verbundenen Risiken ermöglicht es einer Organisation, ihre Bemühungen zu fokussieren und zu priorisieren entsprechend ihrer Risiko-Management-Strategie und Geschäftsbedürfnisse.
+    Entwickeln Sie ein organisatorisches Verständnis, um Cybersecurity-Risiken für Systeme, Personen, Vermögenswerte, Daten und Fähigkeiten zu verwalten. Das Verständnis des Geschäftszusammenhangs, der Ressourcen und der damit verbundenen Risiken ermöglicht die Fokussierung & Priorisierung der Bemühungen entsprechend der Risiko-Management-Strategie.
         ++[Zurück]
             Zurück -> Divert1
  * [Protect] Protect
-    Entwickeln und implementieren Sie angemessene Schutzmaßnahmen, um die Bereitstellung wichtiger Dienste sicherzustellen. Die Funktion Protect unterstützt die Fähigkeit, die Auswirkungen eines möglichen Cybersecurity-Ereignisses zu begrenzen oder entgegenzuwirken. 
-        ++[Zurück]
+    Entwickeln und implementieren Sie angemessene Schutzmaßnahmen, um die Bereitstellung wichtiger Dienste sicherzustellen. Die Funktion Recover unterstützt eine zeitnahe Rückkehr zum normalen Betrieb, um die Auswirkungen des Incident zu reduzieren.
             Zurück -> Divert1
  + [Leave] ->EndPart
 
