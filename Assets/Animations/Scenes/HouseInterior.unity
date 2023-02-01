@@ -1819,12 +1819,12 @@ Prefab:
     - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
         type: 2}
       propertyPath: playerPosition.x
-      value: 7.5
+      value: 7.14
       objectReference: {fileID: 0}
     - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
         type: 2}
       propertyPath: playerPosition.y
-      value: -9.22
+      value: -10.1
       objectReference: {fileID: 0}
     - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
         type: 2}

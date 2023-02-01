@@ -8492,6 +8492,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 133.3
       objectReference: {fileID: 0}
+    - target: {fileID: 114262395734817586, guid: 8c2be557a970ab44885700eefc04349e,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c2be557a970ab44885700eefc04349e, type: 2}
   m_IsPrefabParent: 0
@@ -8541,10 +8546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextOn: {fileID: 0}
-  contextOff: {fileID: 0}
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
+  contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
+  dialogBox: {fileID: 67042911}
+  dialogText: {fileID: 1443848137}
   dialog: "R\xE4tselr\xE4ume"
 --- !u!61 &149142141
 BoxCollider2D:
@@ -8555,7 +8560,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.30898, y: 0.08582872}
@@ -12131,7 +12136,7 @@ MonoBehaviour:
   contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
   dialogBox: {fileID: 67042911}
   dialogText: {fileID: 1443848137}
-  dialog: Warroom
+  dialog: War Room
 --- !u!61 &1104772597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12141,7 +12146,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.017165422, y: -0.3604765}
