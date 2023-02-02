@@ -8650,6 +8650,11 @@ Prefab:
       propertyPath: m_Size.y
       value: 3.2442741
       objectReference: {fileID: 0}
+    - target: {fileID: 114350360815739370, guid: 117ad4f8223bfe54db1223f3d09ad075,
+        type: 2}
+      propertyPath: dialog
+      value: "Entschuldigung, ich befinde mich gerade in einem Kundengespr\xE4ch."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 117ad4f8223bfe54db1223f3d09ad075, type: 2}
   m_IsPrefabParent: 0
@@ -13483,7 +13488,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1196910623}
   - component: {fileID: 1196910625}
-  - component: {fileID: 1196910624}
   m_Layer: 0
   m_Name: InteractionZone
   m_TagString: Untagged
@@ -13504,22 +13508,6 @@ Transform:
   m_Father: {fileID: 322931463}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1196910624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1196910622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fd2c133b8ee3a245bca3bd098f49595, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contextOn: {fileID: 11400000, guid: b2420a7c03eca8d4fae89d5c11ba28f9, type: 2}
-  contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
-  dialogBox: {fileID: 67042911}
-  dialogText: {fileID: 1443848137}
-  dialog: blabla<
 --- !u!61 &1196910625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13529,10 +13517,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011786699, y: -0.07416725}
+  m_Offset: {x: -0.46822286, y: 0.15405083}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13543,7 +13531,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9264483, y: 2.3371544}
+  m_Size: {x: 1.013576, y: 1.564724}
   m_EdgeRadius: 0
 --- !u!1 &1393921286
 GameObject:

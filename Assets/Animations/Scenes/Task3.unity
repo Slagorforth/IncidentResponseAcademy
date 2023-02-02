@@ -846,6 +846,60 @@ Transform:
   m_PrefabParentObject: {fileID: 4448158555898200, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
     type: 2}
   m_PrefabInternal: {fileID: 39993049}
+--- !u!1 &51384624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 51384625}
+  - component: {fileID: 51384626}
+  m_Layer: 0
+  m_Name: TeleporterCollision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &51384625
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51384624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.85, y: 1.76, z: 0}
+  m_LocalScale: {x: 1.125, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 924961919}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &51384626
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51384624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13253331, y: 0.06277847}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7672997, y: 2.0358505}
+  m_EdgeRadius: 0
 --- !u!4 &54227346 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4916435277789670, guid: acb00a11372a0b141a43d77795a057d5,
@@ -8313,6 +8367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 830375272}
   lockedDoor: {fileID: 1389995476}
+  teleporter: {fileID: 0}
   newSprite: {fileID: 21300090, guid: 67abb189f06a10742bcb11f9ecb08ea7, type: 3}
   image: {fileID: 1858019227}
   image2: {fileID: 474354031}
@@ -14667,6 +14722,7 @@ Transform:
   - {fileID: 1589993643}
   - {fileID: 9493274}
   - {fileID: 1024659136}
+  - {fileID: 51384625}
   m_Father: {fileID: 303814116}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

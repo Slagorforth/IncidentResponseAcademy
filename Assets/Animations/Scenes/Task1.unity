@@ -7195,7 +7195,8 @@ MonoBehaviour:
   dialog: "Im oberen Teil des Raumes befinden sich mehrere Schalter, die jeweils f\xFCr
     eine Phase im Incident Response Prozess stehen. Bringen Sie die Schalter in die
     richtige Reihenfolge um in den n\xE4chsten Raum zu gelangen. Ist ein Schalter
-    richtig, leuchtet eine Lampe dar\xFCber auf."
+    richtig, leuchtet eine Lampe dar\xFCber auf. Sollte ein Tipp ben\xF6tigt werden,
+    bet\xE4tige den Schalter links in der Ecke."
 --- !u!61 &1015638311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7208,7 +7209,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.26498234, y: 0.18774867}
+  m_Offset: {x: -0.5487877, y: 0.18774867}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7219,7 +7220,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5299644, y: 1.3754973}
+  m_Size: {x: 2.097575, y: 1.3754973}
   m_EdgeRadius: 0
 --- !u!1 &1048474226
 GameObject:
@@ -8148,7 +8149,11 @@ Prefab:
     - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
       propertyPath: m_Text
-      value: Text
+      value: "Im oberen Teil des Raumes befinden sich mehrere Schalter, die jeweils
+        f\xFCr eine Phase im Incident Response Prozess stehen. Bringen Sie die Schalter
+        in die richtige Reihenfolge um in den n\xE4chsten Raum zu gelangen. Ist ein
+        Schalter richtig, leuchtet eine Lampe dar\xFCber auf. Sollte ein Tipp ben\xF6tigt
+        werden, bet\xE4tige den Schalter links in der Ecke."
       objectReference: {fileID: 0}
     - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
@@ -8158,7 +8163,27 @@ Prefab:
     - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
       propertyPath: m_FontData.m_Alignment
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 168.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 684.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57753a15175859c44a0817ebbd559065, type: 2}
@@ -8888,9 +8913,20 @@ Prefab:
       propertyPath: m_Size.x
       value: 1.8388062
       objectReference: {fileID: 0}
+    - target: {fileID: 114579341758112722, guid: d4ba7b20a8db6c4479d8978131d880a5,
+        type: 2}
+      propertyPath: branchingCanvas
+      value: 
+      objectReference: {fileID: 266925897}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ba7b20a8db6c4479d8978131d880a5, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1909744617 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114994984643470192, guid: 9ed9fe375f0b7404abb114d50712cdc5,
+    type: 2}
+  m_PrefabInternal: {fileID: 266925893}
+  m_Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1925253988 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1031060597807924, guid: d86b538816cb99a49bb5724b397c5c5a,
@@ -9338,7 +9374,7 @@ MonoBehaviour:
   dialogValue: {fileID: 11400000, guid: 8a84ae9671b66b247be3304847657289, type: 2}
   dialogHolder: {fileID: 266925896}
   choiceHolder: {fileID: 266925894}
-  comScroll: {fileID: 505914535}
+  comScroll: {fileID: 1909744617}
 --- !u!114 &2110581282
 MonoBehaviour:
   m_ObjectHideFlags: 0

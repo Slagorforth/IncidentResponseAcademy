@@ -1,4 +1,4 @@
-Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfahren.
+Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfahren. (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
 
 -
 -> Divert1
@@ -7,7 +7,7 @@ Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfa
  * [Backup] Was sind Backups?
     Ein Backup ist eine Kopie von Daten, die zu einem bestimmten Zeitpunkt erstellt wurde, um sie bei Verlust oder Beschädigung der ursprünglichen Daten wiederherstellen zu können. Diese sind besonders wichtig beim Auftreten von Incidents.
         **[Mehr erfahren] Worauf muss man bei einem Backup achten?
-            Es sollten regelmäßig Backups gemacht werden, um im Falle eines Datenverlusts eine möglichst aktuelle Version wiederherstellen zu können. Außerdem sollten Backups verschlüsselt und an einem anderen Ort als dem Original gespeichert werden, um sie vor Katastrophen zu schützen. Es sollte regelmäßig überprüft werden, ob die Backups ordnungsgemäß gemacht und gespeichert wurden. 
+            Es sollten regelmäßig Backups angelegt und geprüft werden, um im Falle eines Datenverlusts eine möglichst aktuelle Version wiederherstellen zu können. Außerdem sollten Backups verschlüsselt und an einem anderen Ort als dem Original gespeichert werden, um sie vor Katastrophen zu schützen.
                 ***[Zurück]-> Divert1
         **[Zurück] -> Divert1   
  * [Patch Management] Was ist Patch Management?
@@ -41,23 +41,25 @@ Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfa
             ***[Arten] Welche Arten an Zugriffsrechte gibt es?
                 Lesen: Lesen von Dateien/Ordnern, kein Ändern möglich - <>
                 Schreiben: Lesen & Ändern von Dateien/Ordnern - <>
-                Ausführen: Ausführen von Programmen & Skripten - <>
-                Löschen: Löschen von Dateien & Ordnern - <>
-                Verwalten: Verwaltung von Dateien & Ordnern (Hinzufügen/Ändern von Unterordnern) - <>
-                Vollzugriff: Ermöglicht alle oben genannten Aktionen
-                    ****[Zurück]-> Divert1
+                Ausführen: Ausführen von Programmen & Skripten
+                ****[Weiter]
+                 Löschen: Löschen von Dateien & Ordnern - <>
+                 Verwalten: Verwaltung von Dateien & Ordnern (Hinzufügen/Ändern von Unterordnern) - <>
+                 Vollzugriff: Ermöglicht alle oben genannten Aktionen
+                    *****[Zurück]-> Divert1
             ***[Zurück]-> Divert1
         **[Arten] Welche Arten an Zugriffsrechte gibt es?
             Lesen: Lesen von Dateien/Ordnern, kein Ändern möglich <>
-            Schreiben: Lesen & Ändern von Dateien/Ordnern<>
-            Ausführen: Ausführen von Programmen & Skripten<>
-            Löschen: Löschen von Dateien & Ordnern<>
-            Verwalten: Verwaltung von Dateien & Ordnern (Hinzufügen/Ändern von Unterordnern)<>
-            Vollzugriff: Ermöglicht alle oben genannten Aktionen
-                ***[Mehr erfahren] Worauf muss man bei dem Einstellen der Zugriffsrechte achten?
+            Schreiben: Lesen & Ändern von Dateien/Ordnern <>
+            Ausführen: Ausführen von Programmen & Skripten 
+            ***[Weiter]
+             Löschen: Löschen von Dateien & Ordnern - <>
+             Verwalten: Verwaltung von Dateien & Ordnern (Hinzufügen/Ändern von Unterordnern) - <>
+             Vollzugriff: Ermöglicht alle oben genannten Aktionen                
+                ****[Mehr erfahren] Worauf muss man bei dem Einstellen der Zugriffsrechte achten?
                     Es ist wichtig, dass nur berechtigte Benutzer auf Ressourcen zugreifen können und die Regeln für die Vergabe sollten eindeutig sein, um eine konsistente Anwendung zu gewährleisten.
-                    ****[Zurück]-> Divert1
-                ***[Zurück]-> Divert1
+                        *****[Zurück]-> Divert1
+                ****[Zurück]-> Divert1
         **[Zurück] -> Divert1  
  * [Netzwerk] Was ist ein Netzwerk?
     Ein Netzwerk ist eine Ansammlung von Computern, Geräten und Systemen, die miteinander verbunden sind, um Informationen und Ressourcen zu teilen.

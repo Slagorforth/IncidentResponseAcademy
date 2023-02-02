@@ -1,4 +1,4 @@
-Guten Tag, im Incident Response Management gibt es laut Nist (National Institute of Standards and Technology) mehrere Phasen. Möchten Sie über eine Phase mehr erfahren?
+Guten Tag, im Incident Response Management gibt es laut Nist (National Institute of Standards and Technology) mehrere Phasen. Möchten Sie über eine Phase mehr erfahren? (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
 
 -
 -> Divert1

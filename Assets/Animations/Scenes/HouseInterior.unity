@@ -197,8 +197,8 @@ MonoBehaviour:
   dialogText: {fileID: 1696679223}
   dialog: "Willkommen! In diesem Spiel kannst du dein Wissen zu dem Thema Incident
     Response Management verbessern. Halte dich nach Verlassen des Hauses Richtung
-    Westen um das Office der IR-Simulation GmbH zu finden. M\xF6chtest du auf dem
-    Weg dahin mit Personen oder Gegenst\xE4nden interagieren, dr\xFCcke die Leertaste
+    Osten um das Office der IR-Simulation GmbH zu finden. M\xF6chtest du auf dem Weg
+    dahin mit Personen oder Gegenst\xE4nden interagieren, dr\xFCcke die Leertaste
     sobald sich ein Fragezeichen \xFCber deinem Kopf befindet. Viel Spa\xDF!"
 --- !u!1001 &764281493
 Prefab:

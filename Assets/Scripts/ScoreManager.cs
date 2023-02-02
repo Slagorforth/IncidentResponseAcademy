@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour {
     public TMP_Text scoreText;
     private int score;
     public GameObject lockedDoor;
+    public GameObject teleporter;
     public Sprite newSprite;
     public Image image, image2;
     public float displayTime = 5f;
@@ -31,6 +32,7 @@ public class ScoreManager : MonoBehaviour {
     {
         lockedDoor.GetComponent<SpriteRenderer>().sprite = newSprite;
         lockedDoor.GetComponent<BoxCollider2D>().enabled = false;
+        teleporter.SetActive(true);
     }
     public void Right()
     {

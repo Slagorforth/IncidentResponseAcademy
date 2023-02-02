@@ -171,7 +171,7 @@ MonoBehaviour:
   contextOff: {fileID: 11400000, guid: f3a07f4afe08424489eac7ac8fc5e135, type: 2}
   dialogBox: {fileID: 988872743}
   dialogText: {fileID: 988872742}
-  dialog: "Herzlichenn Gl\xFCckwunsch zum Absolvieren der Tests. Schaue dich gerne
+  dialog: "Herzlichen Gl\xFCckwunsch zum Absolvieren der Tests. Schaue dich gerne
     weiter in unserem Office um."
 --- !u!212 &121589282
 SpriteRenderer:
@@ -288,6 +288,29 @@ Prefab:
         type: 2}
       propertyPath: sceneToLoad
       value: Task3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cc2479c64f03774c85055f9641f6c38,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 1546803495693904, guid: f5f2c32eca6fec44a9437f292253c686,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 1511351449023530, guid: 23b4ac048e483b84f991cb961456b8a6,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeWait
+      value: 0.33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 841bda74786f35e489c00b07704316b0, type: 2}
@@ -1284,12 +1307,12 @@ Prefab:
     - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 3.1
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 686.9
+      value: 693.1
       objectReference: {fileID: 0}
     - target: {fileID: 224329743470732286, guid: 8c2be557a970ab44885700eefc04349e,
         type: 2}
@@ -1384,6 +1407,29 @@ Prefab:
         type: 2}
       propertyPath: playerPosition.y
       value: -3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 1511351449023530, guid: 23b4ac048e483b84f991cb961456b8a6,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 1546803495693904, guid: f5f2c32eca6fec44a9437f292253c686,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cc2479c64f03774c85055f9641f6c38,
+        type: 2}
+    - target: {fileID: 114355019284210076, guid: 841bda74786f35e489c00b07704316b0,
+        type: 2}
+      propertyPath: fadeWait
+      value: 0.33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 841bda74786f35e489c00b07704316b0, type: 2}

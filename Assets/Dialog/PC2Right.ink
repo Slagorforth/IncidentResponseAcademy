@@ -1,4 +1,4 @@
-PC6: Was möchten sie tun?
+PC6: Was möchten sie tun? (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
 
 -
 -> Divert1

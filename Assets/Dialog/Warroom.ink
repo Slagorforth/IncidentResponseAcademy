@@ -1,4 +1,4 @@
-Guten Tag, möchtest du mehr über War Rooms erfahren?
+Guten Tag, möchtest du mehr über War Rooms erfahren? (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
 
 -
 -> Divert1
@@ -12,11 +12,11 @@ Guten Tag, möchtest du mehr über War Rooms erfahren?
         **[Zurück]
             Zurück -> Divert1
  * [Zweck] Was wird in einem War Room besprochen?
-    Es dient als zentrale Kommandozentrale, in der Informationen gesammelt, Überwachungs- und Überprüfungstätigkeiten ausgeführt und Entscheidungen getroffen werden, um den Vorfall schnell und effektiv zu bewältigen. Dort versammelt sich (teils virtuell) das Krisenteam des Unternehmen, inklusive Experten, Forensiker und ggf. externe Parteien. 
+    Es dient als Kommandozentrale für das Sammeln von Informationen und die Überwachung und Entscheidungen bei Krisen, um den Vorfall schnell und effektiv zu bewältigen. Dort versammeln sich (teils virtuell) das Krisenteam des Unternehmen inklusive Experten verschiedener Bereiche und ggf. externe Parteien.
         **[Zurück]
             Zurück -> Divert1
  * [Wichtigkeit] Warum ist die Existenz eines War Rooms wichtig?
-    Der War Room trägt dazu bei, effektiv auf kritische Incidents zu reagieren. Es werden an einem Ort Experten aus verschiedenen Bereichen versammelt um eine Lösung zu finden, wodurch schnellere Entscheidungen getroffen werden. Außerdem bietet ein War Room eine transparente Übersicht über den Status des Vorfalls und den Fortschritt bei der Bewältigung desselben.
+    Der War Room fördert eine effektive Reaktion auf kritische Incidents durch Versammlung von Experten aus verschiedenen Bereichen. Außerdem bietet ein War Room eine transparente Übersicht über den Status des Vorfalls und den Fortschritt bei der Bewältigung desselben.
         **[Zurück]
             Zurück -> Divert1
  * [Leave] ->EndPart

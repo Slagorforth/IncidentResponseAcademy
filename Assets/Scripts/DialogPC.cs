@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogPC : Interactable {
 
+    [SerializeField] private GameObject branchingCanvas;
     // Reference to the intermediate dialog value
     [SerializeField] private TextAssetValue dialogValue;
     // Reference to the Pc Dialog
@@ -24,7 +25,7 @@ public class DialogPC : Interactable {
 	void Update () {
 		if (playerInRange)
         {
-            if (Input.GetButtonDown("Check"))
+            if (Input.GetButtonDown("Check") && !branchingCanvas.activeSelf)
             {
                 dialogValue.value = myDialog;
                 branchingDialogNotification.Raise();

@@ -1,4 +1,4 @@
-Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten Sie über eine Angriffsart mehr erfahren?
+Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten Sie über eine Angriffsart mehr erfahren? (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
 
 -
 -> Divert1
@@ -9,14 +9,14 @@ Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten 
         **[Beispiele] Wie funktioniert das genau?
             Der Angreifer täuscht durch gefälschte E-Mails oder Websites dabei vor, von einer vertrauenswürdigen Quelle zu stammen, wie z.B. einer Bank oder einem Online-Shop. Einfallstore sind hierbei meistens die Unachtsamkeit des Nutzers oder das unbewusste Anklicken von Links oder Öffnen von Anhängen in E-Mails.
             ***[Schutz] Wie kann man sich schützen?
-             Um sich gegen Phishing-Angriffe zu schützen, sollte man vorsichtig mit E-Mails und Links umgehen, die von unbekannten Absendern stammen. E-Mail-Filter können helfen, gefälschte Nachrichten zu erkennen, und es ist wichtig, vertrauliche Informationen niemals in E-Mail-Form oder über verdächtige Websites preiszugeben. Zudem kann eine Schulung und Sensibilisierung für Phishing-Angriffe hilfreich sein. ->Divert1
+             Schützen Sie sich vor Phishing-Angriffen, indem Sie vorsichtig mit E-Mails und Links von unbekannten Absendern umgehen, E-Mail-Filter nutzen und vertrauliche Informationen nicht preisgeben. Zudem kann eine Schulung und Sensibilisierung für Phishing-Angriffe hilfreich sein. ->Divert1
             ***[Zurück] ->Divert1
         **[Zurück]
             Zurück -> Divert1
  * [Denial-of-Service] Erzähl mir mehr über Denial-of-Service.
     Denial-of-Service Attacken sind Versuche, einen Server oder ein Netzwerk durch Überlastung lahmzulegen.
         **[Beispiele] Wie funktioniert das genau?
-            Beim DoS-Angriff wird versucht, einen Server oder ein Netzwerk durch Überlastung lahmzulegen. Dies kann durch das Senden von vielen Anfragen an einen Server oder durch das Blockieren von Verbindungen erreicht werden. Einfallstore sind hierbei Schwachstellen in Netzwerken oder Servern, die es Angreifern ermöglichen, große Mengen an Verkehr zu generieren.
+            Beim DoS-Angriff wird versucht, einen Server oder ein Netzwerk durch Überlastung lahmzulegen. Dies kann durch das Senden von vielen Anfragen an einen Server erreicht werden. Einfallstore sind hierbei Schwachstellen in Netzwerken oder Servern, die es Angreifern ermöglichen, große Mengen an Verkehr zu generieren.
             ***[Schutz] Wie kann man sich schützen?
              Um sich gegen DoS-Angriffe zu schützen, kann man sicherstellen, dass Netzwerke und Server regelmäßig gewartet und aktualisiert werden. Eine Überwachung des Netzverkehrs kann ebenfalls helfen, Angriffe frühzeitig zu erkennen und abzuwehren. ->Divert1
             ***[Zurück] ->Divert1
@@ -36,7 +36,7 @@ Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten 
         **[Beispiele] Wie funktioniert das genau?
             Ransomware ist eine Art von Malware, die Daten verschlüsselt und den Zugriff darauf verweigert, bis ein Lösegeld gezahlt wird. Diese Angriffe werden oft durch Phishing-E-Mails oder infizierte Websites ausgelöst. Einfallstore sind hierbei unpatched/nicht aktuelle Software oder unachtsam geöffnete E-Mail-Anhänge.
             ***[Schutz] Wie kann man sich schützen?
-             Um sich vor Ransomware-Angriffen zu schützen, sollte man regelmäßig Backups erstellen und sichern. Zudem kann man Sicherheitsmaßnahmen wie Antivirus-Software und Firewalls einsetzen, um eindringende Schadsoftware zu erkennen und abzuwehren. Ein hundertprozentigen Schutz kann aber nicht erreicht werden, weshalb Backups zum Wiederherstellen essentiell sind. ->Divert1
+             Schützen Sie sich vor Ransomware-Angriffen durch regelmäßiges Erstellen und Sichern von Backups und den Einsatz von Antivirus-Software und Firewalls, um eindringende Schadsoftware zu erkennen und abzuwehren. Ein garantierter Schutz kann allerdings erreicht werden, weshalb Backups zur Wiederherstellung essentiell sind. ->Divert1
             ***[Zurück] ->Divert1
         **[Zurück]
             Zurück -> Divert1        
@@ -52,10 +52,12 @@ Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten 
  * [Social Engineering] Erzähl mir mehr über Social Engineering.
     Social Engineering Attacken sind Versuche über menschliche Interaktion, wie z.B. Phishing oder Baiting, vertrauliche Informationen zu erlangen oder Zugriff auf Systeme zu erlangen.
         **[Beispiele] Wie funktioniert das genau?
-            Social Engineering kann durch verschiedene Techniken erfolgen, wie z.B. Phishing-E-Mails, Baiting (das Angebot von etwas Verlockendem), Scareware (Angstmache), Pretexting (die Verwendung einer falschen Identität) oder durch das Einschleusen von sogenannten "Social Engineers" (Angreifer, die sich als vertrauenswürdige Personen ausgeben). Einfallstore für Social Engineering Angriffe sind meistens die Unachtsamkeit oder Unerfahrenheit von Nutzern, sowie mangelndes Wissen über Sicherheit. Dies kann dazu führen, dass Nutzer auf gefälschte E-Mails, Websites oder Anrufe hereinfallen und vertrauliche Informationen preisgeben.
-            ***[Schutz] Wie kann man sich schützen?
-             Um sich gegen Social Engineering Angriffe zu schützen, ist es wichtig, sensibilisiert zu sein und immer skeptisch gegenüber verdächtigen Anrufen, E-Mails oder Nachrichten zu sein. Es ist hilfreich, regelmäßig Schulungen und Übungen zu machen, um Mitarbeiter für solche Angriffe zu sensibilisieren. ->Divert1
-            ***[Zurück] ->Divert1
+            Social Engineering kann durch verschiedene Techniken erfolgen, wie z.B. Phishing-E-Mails, Baiting (das Angebot von etwas Verlockendem), Scareware (Angstmache), Pretexting (die Verwendung einer falschen Identität) oder durch das Einschleusen von sogenannten "Social Engineers" (Angreifer, die sich als vertrauenswürdige Personen ausgeben).
+            ***[Weiter]
+             Einfallstore für Social Engineering Angriffe sind meistens die Unachtsamkeit oder Unerfahrenheit von Nutzern, sowie mangelndes Wissen über Sicherheit. Dies kann dazu führen, dass Nutzer auf gefälschte E-Mails, Websites oder Anrufe hereinfallen und vertrauliche Informationen preisgeben.
+                ****[Schutz] Wie kann man sich schützen?
+                 Um sich gegen Social Engineering Angriffe zu schützen, ist es wichtig, sensibilisiert zu sein und immer skeptisch gegenüber verdächtigen Anrufen, E-Mails oder Nachrichten zu sein. Es ist hilfreich, regelmäßig Schulungen und Übungen zu machen, um Mitarbeiter für solche Angriffe zu sensibilisieren. ->Divert1
+                    *****[Zurück] ->Divert1
         **[Zurück]
             Zurück -> Divert1
  * [Leave] ->EndPart        

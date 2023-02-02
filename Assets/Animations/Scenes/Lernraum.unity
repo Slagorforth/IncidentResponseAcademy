@@ -2177,6 +2177,7 @@ MonoBehaviour:
   playerInRange: 0
   otherTag: Player
   myNotification: {fileID: 11400000, guid: 3dc4190fd64518240886476ad7075547, type: 2}
+  branchingCanvas: {fileID: 908301737}
   dialogValue: {fileID: 11400000, guid: 8a84ae9671b66b247be3304847657289, type: 2}
   myDialog: {fileID: 4900000, guid: 5d43bced99b91da4bb5cb45e3bc74f51, type: 3}
   branchingDialogNotification: {fileID: 11400000, guid: 4d7eaf88e7a147d4d879bb0ba9d0ceff,
@@ -2298,6 +2299,7 @@ MonoBehaviour:
   playerInRange: 0
   otherTag: Player
   myNotification: {fileID: 11400000, guid: 3dc4190fd64518240886476ad7075547, type: 2}
+  branchingCanvas: {fileID: 908301737}
   dialogValue: {fileID: 11400000, guid: 8a84ae9671b66b247be3304847657289, type: 2}
   myDialog: {fileID: 4900000, guid: 673d6a522424bfc429e083ed40c1201e, type: 3}
   branchingDialogNotification: {fileID: 11400000, guid: 4d7eaf88e7a147d4d879bb0ba9d0ceff,
@@ -4595,6 +4597,7 @@ MonoBehaviour:
   playerInRange: 0
   otherTag: Player
   myNotification: {fileID: 11400000, guid: 3dc4190fd64518240886476ad7075547, type: 2}
+  branchingCanvas: {fileID: 908301737}
   dialogValue: {fileID: 11400000, guid: 8a84ae9671b66b247be3304847657289, type: 2}
   myDialog: {fileID: 4900000, guid: c2cc33a1415ec174aae11c562bb35f17, type: 3}
   branchingDialogNotification: {fileID: 11400000, guid: 4d7eaf88e7a147d4d879bb0ba9d0ceff,
