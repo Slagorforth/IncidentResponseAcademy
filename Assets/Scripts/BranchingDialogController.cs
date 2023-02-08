@@ -14,7 +14,8 @@ public class BranchingDialogController : MonoBehaviour {
     [SerializeField] private Story myStory;
     [SerializeField] private GameObject dialogHolder;
     [SerializeField] private GameObject choiceHolder;
-    [SerializeField] public ScrollRect comScroll; 
+    [SerializeField] public ScrollRect comScroll;
+    public GameObject player;
 
 
     // Use this for initialization
@@ -24,14 +25,25 @@ public class BranchingDialogController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.Escape) && branchingCanvas.activeSelf)
+        {
+            DisableCanvas();
+        }
+    }
 
     public void EnableCanvas()
     {
         branchingCanvas.SetActive(true);
         SetStory();
         RefreshView();
+        player.GetComponent<PlayerMovement>().speed = 0f;        
+    }
+
+    public void DisableCanvas()
+    {
+        ResetFields();
+        branchingCanvas.SetActive(false);
+        player.GetComponent<PlayerMovement>().speed = 5f;
     }
 
     public void SetStory()
@@ -59,7 +71,7 @@ public class BranchingDialogController : MonoBehaviour {
         }
         else
         {
-            branchingCanvas.SetActive(false);
+            DisableCanvas();
         }
     }
 
@@ -98,7 +110,15 @@ public class BranchingDialogController : MonoBehaviour {
         RefreshView();
     }
 
-    
+    void ResetFields()
+    {
+        for (int i = 0; i < dialogHolder.transform.childCount; i++)
+        {
+            Destroy(dialogHolder.transform.GetChild(i).gameObject);
+        }
+    }
+
+
     IEnumerator ForceScrollDown()
     {
         // Wait for end of frame AND force update all canvases before setting to bottom.

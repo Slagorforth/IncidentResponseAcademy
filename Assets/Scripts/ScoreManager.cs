@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour {
     public GameObject lockedDoor;
     public GameObject teleporter;
     public Sprite newSprite;
-    public Image image, image2;
+    public GameObject imageGreen, imageRed;
     public float displayTime = 5f;
     void Update()
     {
@@ -36,20 +36,20 @@ public class ScoreManager : MonoBehaviour {
     }
     public void Right()
     {
-        image.gameObject.SetActive(true);
+        imageGreen.gameObject.SetActive(true);
         StartCoroutine(DeactivateAfterTime());
     }
 
     public void False()
     {
-        image2.gameObject.SetActive(true);
+        imageRed.gameObject.SetActive(true);
         StartCoroutine(DeactivateAfterTime());
     }
 
     IEnumerator DeactivateAfterTime()
     {
         yield return new WaitForSeconds(displayTime);
-        image.gameObject.SetActive(false);
-        image2.gameObject.SetActive(false);
+        imageGreen.gameObject.SetActive(false);
+        imageRed.gameObject.SetActive(false);
     }
 }

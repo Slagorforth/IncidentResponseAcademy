@@ -29,7 +29,7 @@ public class DialogPC : Interactable {
             {
                 dialogValue.value = myDialog;
                 branchingDialogNotification.Raise();
-            }
+            }            
         }
 	}
     // Diese Methode wird aufgerufen, wenn ein anderes Collision2D-GameObject in den Trigger eintritt.

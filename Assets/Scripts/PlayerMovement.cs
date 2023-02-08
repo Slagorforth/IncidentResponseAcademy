@@ -39,9 +39,9 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveY", -1);
         transform.position = startingPosition.initialValue;
     }
-
+    
     // Update wird jedes Frame aufgerufen.
-    void Update()
+    void FixedUpdate()
     {
         // Setzen des Bewegungsvektors auf den Nullvektor.
         change = Vector3.zero;

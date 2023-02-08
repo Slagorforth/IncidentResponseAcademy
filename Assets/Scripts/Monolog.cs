@@ -7,10 +7,6 @@ using UnityEngine.UI;
 public class Monolog : MonoBehaviour
 {
 
-    // Das Signal, das gesendet wird, wenn der Spieler in die Nähe kommt.
-    public Signal contextOn;
-    // Das Signal, das gesendet wird, wenn der Spieler die Nähe verlässt.
-    public Signal contextOff;
     // Die Dialogbox, die angezeigt wird.
     public GameObject dialogBox;
     // Das Text-Component der Dialogbox, in dem der Text angezeigt wird.
@@ -35,7 +31,6 @@ public class Monolog : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            contextOn.Raise();
             dialogBox.SetActive(true);
             dialogText.text = dialog;
         }
@@ -44,8 +39,7 @@ public class Monolog : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-        {
-            contextOff.Raise();
+        {            
             dialogBox.SetActive(false);
         }
     }
