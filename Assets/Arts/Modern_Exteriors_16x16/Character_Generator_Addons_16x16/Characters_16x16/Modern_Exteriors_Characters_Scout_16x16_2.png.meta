@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: b32b499d77dc507408cbce431b4f5e09
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Modern_Exteriors_Characters_Scout_16x16_2_0
+    21300000: npcrightstand
     21300002: Modern_Exteriors_Characters_Scout_16x16_2_1
     21300004: Modern_Exteriors_Characters_Scout_16x16_2_2
     21300006: NPC
@@ -1143,13 +1143,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Modern_Exteriors_Characters_Scout_16x16_2_0
+      name: npcrightstand
       rect:
         serializedVersion: 2
         x: 0
-        y: 640
+        y: 624
         width: 16
-        height: 16
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

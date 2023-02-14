@@ -24,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     // Die Startposition des Spielers.
     public VectorValue startingPosition;
+    //public GameObject dialogCanvas;
+    //public GameObject dialogBox;
+    //public GameObject dialogBox2;
+    //public GameObject menuCanvas;
 
     void Start()
     {
@@ -51,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("Vertical");
         // Aufruf der Methode zum Aktualisieren der Animation und Bewegung.
         UpdateAnimationAndMove();
+        //Menu();
     }
 
     // Diese Methode aktualisiert die Animation und Bewegung des Spielers.
@@ -86,4 +91,14 @@ public class PlayerMovement : MonoBehaviour
             transform.position + change * speed * Time.deltaTime
         );
     }
+
+    /*void Menu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !menuCanvas.activeSelf
+            && !dialogBox.activeSelf && !dialogBox2.activeSelf && !dialogCanvas.activeSelf)
+        {
+            menuCanvas.SetActive(true);
+            speed = 0f;
+        }
+    }*/
 }

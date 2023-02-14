@@ -1,4 +1,4 @@
-Guten Tag, möchtest du mehr über War Rooms erfahren? (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
+Guten Tag, möchtest du mehr über War Rooms erfahren? (Bediene die Button per Maus)
 
 -
 -> Divert1

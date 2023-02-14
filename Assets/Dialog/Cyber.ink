@@ -1,4 +1,4 @@
-Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfahren. (Bediene die Button per Maus, zum Scrollen die Scrollbar per Maus runter ziehen)
+Guten Tag, hier kannst du etwas über verschiedene Cyber Security Themen erfahren. (Bediene die Button per Maus)
 
 -
 -> Divert1
@@ -12,10 +12,10 @@ Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfa
  * [Patch Management] Was ist Patch Management?
     Patch Management bezieht sich auf den Prozess, bei dem Software-Updates, Patches und Fixes auf Computersystemen und Anwendungen installiert werden. Ein Patch stopft die Sicherheitslücke, behebt Programmfehler und verhindert so den Erfolg von Malware-Angriffen.
         **[Mehr erfahren] Worauf muss man beim Patch Management achten?
-                Aktualität: Regelmäßige Suchen/Installation verfügbarer Updates und Patches - <>
-                Priorisierung: Kritische Sicherheits-Updates zuerst installieren, um Sicherheitsrisiken zu vermeiden - <>
-                Testen: Updateprüfung auf einem Testsystem, um mögliche Kompatibilitätsprobleme zu vermeiden - <>
-                Dokumentation: Aufzeichnung installierter Updates/Patches führen zur Übersicht über Systemänderungen 
+                1) Aktualität: Regelmäßige Suchen/Installation verfügbarer Updates und Patches <>
+                2) Priorisierung: Kritische Sicherheits-Updates zuerst installieren, um Sicherheitsrisiken zu vermeiden <>
+                3) Testen: Updateprüfung auf einem Testsystem, um mögliche Kompatibilitätsprobleme zu vermeiden <>
+                4) Dokumentation: Aufzeichnung installierter Updates/Patches führen zur Übersicht über Systemänderungen 
                 ***[Zurück]-> Divert1
  * [Asset Management] Was ist Asset Management?
     Im IT-Bereich bezieht sich Asset Management auf den Prozess des Verwalten von IT-Systemen und -Geräten, einschließlich Computer, Netzwerke, Software und anderer IT-Ressourcen. Es umfasst die Überwachung und Verwaltung dieser Ressourcen, um sicherzustellen, dass sie effektiv und effizient genutzt werden.
@@ -38,7 +38,7 @@ Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfa
                 Schreiben: Lesen und Ändern von Dateien und Ordnern   <>
                 Ausführen: Ausführen von Programmen & Skripten
                 ****[Weiter]
-                 Löschen: Löschen von Dateien und Ordnern            <>
+                 Löschen: Entfernen von Dateien, Ordnern und Programmen  <>
                  Verwalten: Hinzufügen/Ändern von Dateien & Ordnern   <>
                  Vollzugriff: Ermöglicht alle oben genannten Aktionen
                     *****[Zurück]-> Divert1
@@ -60,14 +60,14 @@ Guten Tag, hier kannst du etwas über verschiedene Incident Response Themen erfa
                 ***[Zurück]-> Divert1        
  * [OT-Security] Was ist OT-Security?
     OT-Security bezieht sich auf die Sicherheit von industriellen Steuerungs- und Automatisierungssystemen (Operational Technology, OT), die in Bereichen wie Energieversorgung, Fabrikautomatisierung und Infrastrukturmanagement eingesetzt werden.
-        **[Einfallstore] Welche Lücken werden ausgenutzt?
+        **[Angriffspunkte] Welche Lücken werden ausgenutzt?
             Leichte Ziele für Angreifer sind oft ältere Systeme, die nicht auf dem neuesten Stand gehalten werden, gesammelte Informationen durch Phishing Angriffe oder Mängel in der Geräte- und Systemkonfiguration. Eine weitere Schwachstelle ist oft die fehlende Überwachung und Überprüfung von Systemen, sodass Angriffe unentdeckt bleiben und Schaden anrichten.
                 ***[Relevanz] Ist das Thema momentan relevant?
                     OT-Security ist zur Zeit ein sehr aktuelles Thema, da die OT-Infrastruktur immer mehr mit der IT-Infrastruktur verbunden ist und nicht wie früher davon abgetrennt ist.
                         ****[Zurück]-> Divert1
         **[Relevanz] Ist das Thema momentan relevant?
             OT-Security ist zur Zeit ein sehr aktuelles Thema, da die OT-Infrastruktur immer mehr mit der IT-Infrastruktur verbunden ist und nicht wie früher davon abgetrennt ist.
-                ***[Einfallstore] Welche Lücken werden ausgenutzt?
+                ***[Angriffspunkte] Welche Lücken werden ausgenutzt?
                     Leichte Ziele für Angreifer sind oft ältere Systeme die nicht auf dem neuesten Stand gehalten werden, gesammelte Informationen durch Phishing Angriffe oder Mängel in der Geräte- und Systemkonfiguration. Eine weitere Schwachstelle ist oft die fehlende Überwachung und Überprüfung von Systemen sodass Angriffe unentdeckt bleiben und Schaden anrichten.
                         ****[Zurück]-> Divert1      
 * [White List] Was ist eine White List?

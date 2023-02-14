@@ -227,7 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Notfallbeauftragter
+  dialog: "Als Notfallbeauftragter bin ich f\xFCr die Koordination der Reaktion auf
+    den Incident und die Durchf\xFChrung von Notfallpl\xE4nen verantwortlich."
 --- !u!1 &54288197
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +343,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Leiter der Produktionsabteilung
+  dialog: "Ich leite die Produktionsabteilung und bin f\xFCr die \xDCberwachung der
+    Produktion w\xE4hrend des Incidents und die Koordination von Ma\xDFnahmen zur
+    Minimierung von Ausfallzeiten verantwortlich."
 --- !u!1 &62782798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,6 +2831,7 @@ GameObject:
   - component: {fileID: 138917442}
   - component: {fileID: 138917441}
   - component: {fileID: 138917446}
+  - component: {fileID: 138917447}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -2887,7 +2891,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -2928,6 +2932,7 @@ RectTransform:
   - {fileID: 2091561669}
   - {fileID: 917509215}
   - {fileID: 853710937}
+  - {fileID: 1835593828}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2964,6 +2969,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   myNotification: {fileID: 11400000, guid: 4d7eaf88e7a147d4d879bb0ba9d0ceff, type: 2}
+--- !u!114 &138917447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 138917440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50dbc7b787924d940837d4ed015ea2c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1835593827}
+  player: {fileID: 2143858722}
 --- !u!1 &160173937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,7 +3217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Incident Response Management
+  dialog: "Als Incident Response Experte bin ich f\xFCr die Durchf\xFChrung von Vorfallsanalysen
+    und der Entwicklung von L\xF6sungen zur Behebung des Vorfalls verantwortlich."
 --- !u!114 &192066294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3341,7 +3360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000017166087}
+  m_AnchoredPosition: {x: 0, y: -0.000032424876}
   m_SizeDelta: {x: -417.57733, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &192066301
@@ -3567,7 +3586,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Chief Operating Officer
+  dialog: "Ich bin Chief Operating Officer (COO) und bin f\xFCr die \xDCberwachung
+    des Gesch\xE4ftsbetriebs und die operativen Abl\xE4ufe w\xE4hrend einer Krise
+    verantwortlich."
 --- !u!1 &282827812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,7 +5369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294818237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 5.04, z: -10}
+  m_LocalPosition: {x: 0.01, y: 4.99, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5367,8 +5388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2143858721}
   smoothing: 0.1
-  maxPosition: {x: 0, y: 4.93}
-  minPosition: {x: 0, y: 0.06}
+  maxPosition: {x: 0, y: 5}
+  minPosition: {x: 0, y: 0}
 --- !u!1 &522798327
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,7 +5876,7 @@ Prefab:
     - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 2.8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
@@ -5865,7 +5886,7 @@ Prefab:
     - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 434.8
+      value: 557.3
       objectReference: {fileID: 0}
     - target: {fileID: 224649934069789496, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
@@ -5914,7 +5935,7 @@ Prefab:
     - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
       propertyPath: m_FontData.m_FontSize
-      value: 28
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1260559077045936, guid: 57753a15175859c44a0817ebbd559065, type: 2}
       propertyPath: m_IsActive
@@ -5923,7 +5944,29 @@ Prefab:
     - target: {fileID: 114245306248749178, guid: 57753a15175859c44a0817ebbd559065,
         type: 2}
       propertyPath: m_Text
-      value: Leiter der Produktionsabteilung
+      value: "Als Krisenkommunikation Experte bin ich f\xFCr die Koordination der
+        Kommunikation mit externen Stakeholdern, einschlie\xDFlich Medien und Kunden,
+        aber auch f\xFCr die interne Kommunikation w\xE4hrend des Incidents verantwortlich."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 495.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224042303461543864, guid: 57753a15175859c44a0817ebbd559065,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 150.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57753a15175859c44a0817ebbd559065, type: 2}
@@ -6053,8 +6096,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0012047, y: -88}
-  m_SizeDelta: {x: 800, y: 428.13}
+  m_AnchoredPosition: {x: 0.00028992, y: -76.5}
+  m_SizeDelta: {x: 800, y: 451}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853710938
 MonoBehaviour:
@@ -6075,7 +6118,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9b762353a7e0ccb4db53a2b98d5b2b69, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d607873a2f1d32942b85146cf1cf6feb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6233,7 +6276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Chief Technology Officer
+  dialog: "Ich bin der Chief Technology Officer (CTO) und bin f\xFCr die \xDCberwachung
+    der technologischen Aspekte des Incidents und der Durchf\xFChrung von Reparatur-
+    und Wiederherstellungsma\xDFnahmen zust\xE4ndig."
 --- !u!1 &917509214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6432,7 +6477,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Forensiker
+  dialog: "Ich arbeite als Forensiker und bin f\xFCr die Durchf\xFChrung einer umfassenden
+    Untersuchung des Incidents und die Identifizierung der Ursachen und potentiellen
+    T\xE4ter verantwortlich."
 --- !u!1 &1049928763
 GameObject:
   m_ObjectHideFlags: 0
@@ -6622,7 +6669,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: OT-Security
+  dialog: "Als Mitarbeiter aus dem OT-Security Bereich bin ich f\xFCr die \xDCberwachung
+    der Sicherheit von industriellen Kontrollsystemen (OT) und die Durchf\xFChrung
+    von Ma\xDFnahmen zur Abwehr von Bedrohungen verantwortlich."
 --- !u!1 &1475014665
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,7 +7303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Krisenkommunikation
+  dialog: "Als Krisenkommunikation Experte bin ich f\xFCr die Koordination der Kommunikation
+    mit externen Stakeholdern, einschlie\xDFlich Medien und Kunden, aber auch f\xFCr
+    die interne Kommunikation w\xE4hrend des Incidents verantwortlich. "
 --- !u!1 &1664962496
 GameObject:
   m_ObjectHideFlags: 0
@@ -7343,7 +7394,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.35335326, y: -0.44496298}
+  m_Offset: {x: -0.35335326, y: -0.6178813}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7354,7 +7405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7067065, y: 2.264926}
+  m_Size: {x: 1.7067065, y: 1.9190893}
   m_EdgeRadius: 0
 --- !u!114 &1664962500
 MonoBehaviour:
@@ -7369,7 +7420,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: IT-Security
+  dialog: "Ich bin aus dem IT-Security Bereich und bin f\xFCr die \xDCberwachung der
+    IT-Sicherheit w\xE4hrend des Incidents und die Durchf\xFChrung von Ma\xDFnahmen
+    zur Abwehr von Bedrohungen verantwortlich."
 --- !u!1 &1810823774
 GameObject:
   m_ObjectHideFlags: 0
@@ -7509,6 +7562,136 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1835593826
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 138917445}
+    m_Modifications:
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.6532
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1071.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114012745080290954, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 138917447}
+    - target: {fileID: 114012745080290954, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114645762904803656, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 138917447}
+    - target: {fileID: 114645762904803656, guid: de3312fb6d5ccba468409dd9be0634ee,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitToDesktop
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: de3312fb6d5ccba468409dd9be0634ee, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1835593827 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1021284960697268, guid: de3312fb6d5ccba468409dd9be0634ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1835593826}
+--- !u!224 &1835593828 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224219120818340228, guid: de3312fb6d5ccba468409dd9be0634ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1835593826}
 --- !u!1 &1855135719
 GameObject:
   m_ObjectHideFlags: 0
@@ -7817,7 +8000,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0.9999998}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8009,7 +8192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 774302711}
   dialogText: {fileID: 774302710}
-  dialog: Finance
+  dialog: "Ich arbeite im Finance Bereich und bin f\xFCr die \xDCberwachung der finanziellen
+    Auswirkungen des Incidents und die Koordination von Ma\xDFnahmen zur Minimierung
+    dieser Auswirkungen verantwortlich."
 --- !u!1001 &2091561667
 Prefab:
   m_ObjectHideFlags: 0
@@ -8424,6 +8609,31 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 7cc2479c64f03774c85055f9641f6c38,
         type: 2}
+    - target: {fileID: 114500964759875544, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
+        type: 2}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 774302711}
+    - target: {fileID: 114500964759875544, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
+        type: 2}
+      propertyPath: dialogBox2
+      value: 
+      objectReference: {fileID: 192066298}
+    - target: {fileID: 114500964759875544, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
+        type: 2}
+      propertyPath: dialogCanvas
+      value: 
+      objectReference: {fileID: 2091561672}
+    - target: {fileID: 114500964759875544, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
+        type: 2}
+      propertyPath: menuCanvas
+      value: 
+      objectReference: {fileID: 1835593827}
+    - target: {fileID: 114972786207079890, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
+        type: 2}
+      propertyPath: contextClue
+      value: 
+      objectReference: {fileID: 2143858723}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8735a5bc6bd8a4347b3c36cc3baef45f, type: 2}
   m_IsPrefabParent: 0
@@ -8435,5 +8645,10 @@ Transform:
 --- !u!1 &2143858722 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1986588617906042, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2143858720}
+--- !u!1 &2143858723 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1956705897868828, guid: 8735a5bc6bd8a4347b3c36cc3baef45f,
     type: 2}
   m_PrefabInternal: {fileID: 2143858720}

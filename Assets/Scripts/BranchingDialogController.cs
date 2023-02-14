@@ -16,6 +16,7 @@ public class BranchingDialogController : MonoBehaviour {
     [SerializeField] private GameObject choiceHolder;
     [SerializeField] public ScrollRect comScroll;
     public GameObject player;
+    
 
 
     // Use this for initialization
