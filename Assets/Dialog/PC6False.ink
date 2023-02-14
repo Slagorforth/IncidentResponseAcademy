@@ -5,10 +5,10 @@ PC4: Was möchten sie tun? (Bediene die Button per Maus)
 
 == Divert1 ==
  + [Inspect] Inspect
-    Datum: 01/21/2023 Uhrzeit: 19:15:03 | <>
-    Benutzer: JackTheRipper | <>
-    Ereignis-ID: 3001 | <>
-    Ereigniskategorie: Anmeldeversuch | <>
+    Datum: 01/21/2023 Uhrzeit: 19:15:03; <>
+    Benutzer: JackTheRipper; <>
+    Ereignis-ID: 3001; <>
+    Ereigniskategorie: Anmeldeversuch; <>
     Ereignisnachricht: Mehrere fehlgeschlagene Anmeldeversuche für Benutzer JackTheRipper aufgrund  falscher Passwörter.
         ++[Zurück] -> Divert1
  + [Isolate] Isolate

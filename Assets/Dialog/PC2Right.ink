@@ -4,10 +4,10 @@ PC6: Was möchten sie tun? (Bediene die Button per Maus)
 
 == Divert1 ==
  + [Inspect] Inspect
-    Datum: 01/02/2023 Uhrzeit: 08:42:56 | <>
-    Prozessname: explorer.exe | <>
-    Prozess-ID: 1234 | <>
-    Prozessorbenutzung: 25% | <>
+    Datum: 01/02/2023 Uhrzeit: 08:42:56; <>
+    Prozessname: explorer.exe; <>
+    Prozess-ID: 1234; <>
+    Prozessorbenutzung: 25%; <>
     Speicherverbrauch: 512 MB
         ++[Zurück] -> Divert1
  + [Isolate] Isolate

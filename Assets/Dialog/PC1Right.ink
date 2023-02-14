@@ -5,10 +5,10 @@ PC1: Was möchten sie tun? (Bediene die Button per Maus)
 
 == Divert1 ==
  + [Inspect] Inspect
-    Datum: 01/02/2023 Uhrzeit: 09:52:34 | <>
-    Ereignis-ID: 1234 | <>
-    Ereigniskategorie: Information | <>
-    Ereignisquelle: Microsoft Teams | <>
+    Datum: 01/02/2023 Uhrzeit: 09:52:34; <>
+    Ereignis-ID: 1234: <>
+    Ereigniskategorie: Information; <>
+    Ereignisquelle: Microsoft Teams; <>
     Ereignisnachricht: Die Anwendung wurde erfolgreich gestartet.
         ++[Zurück] -> Divert1
  + [Isolate] Isolate

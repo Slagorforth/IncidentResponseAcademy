@@ -5,10 +5,10 @@ PC3: Was möchten sie tun? (Bediene die Button per Maus)
 
 == Divert1 ==
  + [Inspect] Inspect
-    Datum: 01/25/2023 Uhrzeit: 12:15:03 | <>
-    Benutzer: MaxMustermannn | <>
-    Ereignis-ID: 3001 | <>
-    Ereigniskategorie: Anmeldeversuch | <>
+    Datum: 01/25/2023 Uhrzeit: 12:15:03; <>
+    Benutzer: MaxMustermannn; <>
+    Ereignis-ID: 3001; <>
+    Ereigniskategorie: Anmeldeversuch; <>
     Ereignisnachricht: Erfolgreicher Anmeldeversuch für Benutzer MaxMustermann nach erfolgreicher Überprüfung des Passworts.
         ++[Zurück] -> Divert1
  + [Isolate] Isolate

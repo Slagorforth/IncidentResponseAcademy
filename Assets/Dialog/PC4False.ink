@@ -4,10 +4,10 @@ PC5: Was möchten sie tun? (Bediene die Button per Maus)
 
 == Divert1 ==
  + [Inspect] Inspect
-    Datum: 02/01/2023 Uhrzeit: 16:45:26 | <>
-    Ereignis-ID: 1234 | <>
-    Ereigniskategorie: Warning | <>
-    Ereignisquelle: Application Name | <>
+    Datum: 02/01/2023 Uhrzeit: 16:45:26; <>
+    Ereignis-ID: 1234; <>
+    Ereigniskategorie: Warning; <>
+    Ereignisquelle: Application Name; <>
     Ereignisnachricht: Unbekannte Anwendung wurde gestartet.
         ++[Zurück] -> Divert1
  + [Isolate] Isolate
