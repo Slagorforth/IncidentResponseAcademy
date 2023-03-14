@@ -25,15 +25,6 @@ public class Switch : MonoBehaviour
             ActivateSwitch();
         }
     }
-        
-    public void ActivateSwitch()
-    {
-        active = true; //Setzt den aktiven Zustand des Schalters auf "wahr"
-        storedValue.RuntimeValue = active; //Setzt den gespeicherten Wert des BoolValue-Objekts auf den aktiven Zustand des Schalters.
-        thisDoor.Open();
-        mySprite.sprite = activeSprite; //Ändert das sprite des Schalters auf das aktive sprite.
-        score.GetComponent<ScoreManager>().AddScore();
-    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -42,6 +33,15 @@ public class Switch : MonoBehaviour
         {
             ActivateSwitch();
         }
+    }
+
+    public void ActivateSwitch()
+    {
+        active = true; //Setzt den aktiven Zustand des Schalters auf "wahr"
+        storedValue.RuntimeValue = active; //Setzt den gespeicherten Wert des BoolValue-Objekts auf den aktiven Zustand des Schalters.
+        thisDoor.Open();
+        mySprite.sprite = activeSprite; //Ändert das sprite des Schalters auf das aktive sprite.
+        score.GetComponent<ScoreManager>().AddScore();
     }
 
     public void OnTriggerExit2D(Collider2D other)

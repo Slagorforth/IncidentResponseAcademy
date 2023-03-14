@@ -14,6 +14,8 @@ public class CodeInteraction : MonoBehaviour {
     public Sprite newSprite;
     private string correctCode = "254";
     public bool playerInRange;
+    private bool isInputActive = false;
+    [SerializeField] private GameObject defaultCanvas, wrongCodeCanvas, rightCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -25,17 +27,17 @@ public class CodeInteraction : MonoBehaviour {
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.Space))
         {
-            codeInput.gameObject.SetActive(true);
-            codeInput.ActivateInputField();
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (!isInputActive) 
+            {
+                codeInput.gameObject.SetActive(true);
+                codeInput.ActivateInputField();
+                isInputActive = true;
+            }
+            else if (isInputActive && Input.GetKeyDown(KeyCode.Space))
             {
                 CheckCode(codeInput.text);
             }
         }
-        /*if (Input.GetKeyDown(KeyCode.Space) && codeInput.isFocused)
-        {
-            CheckCode(codeInput.text);
-        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -54,14 +56,24 @@ public class CodeInteraction : MonoBehaviour {
             contextOff.Raise();
             playerInRange = false;
             codeInput.gameObject.SetActive(false);
+            isInputActive = false;
         }
     }
-        void CheckCode(string input)
+
+    void CheckCode(string input)
     {
         if (input == correctCode)
         {
             lockedDoor.GetComponent<SpriteRenderer>().sprite = newSprite;
             lockedDoor.GetComponent<BoxCollider2D>().enabled = false;
+            defaultCanvas.SetActive(false);
+            wrongCodeCanvas.SetActive(false);
+            rightCanvas.SetActive(true);
+        }
+        else
+        {
+            defaultCanvas.SetActive(false);
+            wrongCodeCanvas.SetActive(true);
         }
     }
 }

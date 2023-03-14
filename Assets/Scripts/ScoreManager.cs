@@ -28,12 +28,6 @@ public class ScoreManager : MonoBehaviour {
         Right();
     }
 
-    public void Success()
-    {
-        lockedDoor.GetComponent<SpriteRenderer>().sprite = newSprite;
-        lockedDoor.GetComponent<BoxCollider2D>().enabled = false;
-        teleporter.SetActive(true);
-    }
     public void Right()
     {
         imageGreen.gameObject.SetActive(true);
@@ -51,5 +45,12 @@ public class ScoreManager : MonoBehaviour {
         yield return new WaitForSeconds(displayTime);
         imageGreen.gameObject.SetActive(false);
         imageRed.gameObject.SetActive(false);
+    }
+
+    public void Success()
+    {
+        lockedDoor.GetComponent<SpriteRenderer>().sprite = newSprite;
+        lockedDoor.GetComponent<BoxCollider2D>().enabled = false;
+        teleporter.SetActive(true);
     }
 }

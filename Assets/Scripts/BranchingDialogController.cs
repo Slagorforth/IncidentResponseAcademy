@@ -111,15 +111,6 @@ public class BranchingDialogController : MonoBehaviour {
         RefreshView();
     }
 
-    void ResetFields()
-    {
-        for (int i = 0; i < dialogHolder.transform.childCount; i++)
-        {
-            Destroy(dialogHolder.transform.GetChild(i).gameObject);
-        }
-    }
-
-
     IEnumerator ForceScrollDown()
     {
         // Wait for end of frame AND force update all canvases before setting to bottom.
@@ -128,5 +119,13 @@ public class BranchingDialogController : MonoBehaviour {
         Canvas.ForceUpdateCanvases();
         comScroll.verticalNormalizedPosition = 0f;
         Canvas.ForceUpdateCanvases();
+    }
+
+    void ResetFields()
+    {
+        for (int i = 0; i < dialogHolder.transform.childCount; i++)
+        {
+            Destroy(dialogHolder.transform.GetChild(i).gameObject);
+        }
     }
 }

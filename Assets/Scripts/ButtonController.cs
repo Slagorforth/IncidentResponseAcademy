@@ -77,12 +77,12 @@ public class ButtonController : MonoBehaviour {
             else
             {
                 //Debug.Log("SwitchElse");
-                ResetSwitches();
+                Reset();
             }
         }
     }
 
-    private void ResetSwitches()
+    private void Reset()
     {
         zaehler = 0;
         schalter1.SetActive(true);
@@ -141,7 +141,7 @@ public class ButtonController : MonoBehaviour {
         else
         {
             Debug.Log("LightElse");
-            ResetSwitches();
+            Reset();
         }
     }
 }

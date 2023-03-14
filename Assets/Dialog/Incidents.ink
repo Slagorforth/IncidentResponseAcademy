@@ -11,6 +11,13 @@ Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten 
             ***[Schutz/Maßnahmen] Wie kann man sich schützen?
              Schützen Sie sich vor Phishing-Angriffen, indem Sie vorsichtig mit E-Mails und Links von unbekannten Absendern umgehen, E-Mail-Filter nutzen und vertrauliche Informationen nicht preisgeben. Zudem kann eine Schulung und Sensibilisierung für Phishing-Angriffe hilfreich sein.
                 ****[Zurück] ->Divert1
+ * [Ransomware] Erzähl mir mehr über Ransomware.
+    Ransomware Attacken sind Versuche, durch die Verschlüsselung von Daten Geld zu erpressen.
+        **[Beispiele] Wie funktioniert das genau?
+            Ransomware ist eine Art von Malware, die Daten verschlüsselt und den Zugriff darauf verweigert, bis ein Lösegeld gezahlt wird. Diese Angriffe werden oft durch Phishing-E-Mails oder infizierte Websites ausgelöst. Angriffspunkte sind beispielsweise veraltete Software oder unachtsam geöffnete E-Mail-Anhänge.
+            ***[Schutz/Maßnahmen] Wie kann man sich schützen?
+             Schützen Sie sich vor Ransomware-Angriffen durch regelmäßiges Erstellen und Sichern von Backups und den Einsatz von Antivirus-Software und Firewalls, um eindringende Schadsoftware zu erkennen und abzuwehren. Ein garantierter Schutz kann allerdings nicht erreicht werden, weshalb Backups zur Wiederherstellung essentiell sind.
+                ****[Zurück] ->Divert1                    
  * [Denial-of-Service] Erzähl mir mehr über Denial-of-Service.
     Denial-of-Service Attacken sind Versuche, einen Server oder ein Netzwerk durch Überlastung lahmzulegen.
         **[Beispiele] Wie funktioniert das genau?
@@ -25,13 +32,6 @@ Guten Tag, in der Cyber Security gibt es verschiedenste Angriffsarten. Möchten 
             ***[Schutz/Maßnahmen] Wie kann man sich schützen?
              Um sich vor Malware-Angriffen zu schützen, sollte man Vorsichtsmaßnahmen bei der Installation von Software oder dem Herunterladen von Dateien treffen. Regelmäßige Updates für Betriebssysteme und Antivirus-Software können ebenfalls helfen, bekannte Bedrohungen zu erkennen und zu verhindern.
                 ****[Zurück] ->Divert1
- * [Ransomware] Erzähl mir mehr über Ransomware.
-    Ransomware Attacken sind Versuche, durch die Verschlüsselung von Daten Geld zu erpressen.
-        **[Beispiele] Wie funktioniert das genau?
-            Ransomware ist eine Art von Malware, die Daten verschlüsselt und den Zugriff darauf verweigert, bis ein Lösegeld gezahlt wird. Diese Angriffe werden oft durch Phishing-E-Mails oder infizierte Websites ausgelöst. Angriffspunkte sind beispielsweise veraltete Software oder unachtsam geöffnete E-Mail-Anhänge.
-            ***[Schutz/Maßnahmen] Wie kann man sich schützen?
-             Schützen Sie sich vor Ransomware-Angriffen durch regelmäßiges Erstellen und Sichern von Backups und den Einsatz von Antivirus-Software und Firewalls, um eindringende Schadsoftware zu erkennen und abzuwehren. Ein garantierter Schutz kann allerdings nicht erreicht werden, weshalb Backups zur Wiederherstellung essentiell sind.
-                ****[Zurück] ->Divert1       
  * [SQL-Injection] Erzähl mir mehr über SQL-Injection.
     SQL-Injection Attacken sind Versuche, durch das Einschleusen von Schadcode in eine Datenbank, Schaden anzurichten oder Daten zu stehlen.
         **[Beispiele] Wie funktioniert das genau?
